@@ -1,0 +1,749 @@
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  padding-top: 80px;
+}
+
+.container {
+  width: 1440px;
+  max-width: 90%;
+  margin: auto;
+  padding: 0 16px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 27px;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li.menuIcon {
+  display: none;
+}
+
+header nav ul li.menuIcon img {
+  vertical-align: middle;
+  width: 20px;
+  height: auto;
+}
+
+header nav ul li a {
+  color: #3e3e3e;
+  font-family: Heebo;
+  font-size: 15px;
+  letter-spacing: 0.37px;
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #3e50e5;
+}
+
+header nav ul li:last-of-type a {
+  margin-right: 0;
+}
+
+.logo .purpleDot {
+  background-color: #9370d8;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 9px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.heroContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.heroContent .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.heroContent h1 {
+  max-width: 495px;
+  color: #fff;
+  font-family: Heebo;
+  font-weight: normal;
+  font-size: 50px;
+  letter-spacing: 1.25px;
+  line-height: 56px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.heroContent p {
+  max-width: 518px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+
+.heroContent button {
+  height: 50px;
+  width: 220px;
+  max-width: 100%;
+  border-radius: 92px;
+  background-color: #3e50e5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.heroContent button:hover {
+  color: #3e50e5;
+  background-color: #fff;
+  border: 1px solid #3e50e5;
+}
+
+.bestSellers {
+  padding-top: 80px;
+}
+
+.bestSellers h2 {
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 0.85px;
+  line-height: 42px;
+  font-weight: normal;
+  margin: 0 0 14px 0;
+}
+
+.bestSellers hr {
+  border: none;
+  border-top: 5px solid mediumpurple;
+  width: 66px;
+}
+
+.bestSellers .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 8px;
+}
+
+.bestSellers .productSlider {
+  margin-top: 76px;
+}
+
+.bestSellers .productSlider .product {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 33%;
+  text-align: center;
+  margin: 0 8px;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bestSellers .productSlider .product.new::before {
+  content: "New";
+  background-color: red;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 21px;
+  text-align: center;
+  padding: 4px 15px;
+  border-radius: 40px;
+}
+
+.bestSellers .productSlider .product .productInfo {
+  margin-top: 50px;
+}
+
+.bestSellers .productSlider .product .productInfo .categories {
+  color: #3e50e5;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 30px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.bestSellers .productSlider .product img {
+  max-width: 100%;
+}
+
+.bestSellers .productSlider .product .productInfo .title {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  margin-bottom: 6px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.bestSellers .productSlider .product .productInfo .price {
+  font-size: 28px;
+  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.bestSellers .productSlider .product .productInfo button {
+  height: 50px;
+  width: 219.5px;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 220px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.bestSellers .productSlider .product:hover .productInfo button {
+  color: #fff;
+  background-color: #3e50e5;
+  border: 1px solid #3e50e5;
+}
+
+.bestSellers .productSlider .product .productInfo .price .discontedPrice {
+  color: #ec1c1c;
+}
+
+.bestSellers .productSlider .product .productInfo .price .originalPrice {
+  color: #989898;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  text-decoration: line-through;
+}
+.newsletter {
+  background-color: rgba(200, 200, 200, 0.18);
+  max-width: 955px;
+  text-align: center;
+  padding: 72px 0;
+  margin: 80px auto;
+}
+
+.newsletter h3 {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  line-height: 42px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font: size 16px;
+  letter-spacing: 0.4px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter form input {
+  height: 50px;
+  width: 326px;
+  max-width: 80%;
+  box-sizing: border-box;
+  border-radius: 60px 0 0 60px;
+  border: 1px solid #3e3e3e;
+  border-right: none;
+  font-family: Heebo;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 21px;
+  padding-left: 22px;
+}
+
+.newsletter form button {
+  height: 50px;
+  width: 145px;
+  max-width: 20%;
+  box-sizing: border-box;
+  border-radius: 0 60px 60px 0;
+  background-color: #3e50e5;
+  border: 1px solid #3e50e5;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 21px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.newsletter form button:hover {
+  background-color: #fff;
+  border: 1px solid #3e3e3e;
+  color: #3e50e5;
+}
+
+footer .bottomNav {
+  padding: 60px 0;
+  background-color: #3e3e3e;
+}
+
+footer .copyrightText {
+  color: white;
+  background-color: #2b2b2b;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+}
+
+footer .bottomNav ul {
+  list-style: none;
+}
+
+footer .bottomNav .container {
+  max-width: 955px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bottomNav ul li.listTitle {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+footer .bottomNav ul li a {
+  color: #e0e0e0;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+footer .bottomNav ul li a:hover {
+  color: #3e50e5;
+}
+
+/********* CSS MEDIA QUERIES *******/
+
+/*Design for Small Desktop*/
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1180px;
+  }
+
+  body {
+    padding-top: 70px;
+  }
+
+  header {
+    height: 70px;
+  }
+
+  .heroContent h1 {
+    font-size: 44px;
+    letter-spacing: 1.1px;
+    line-height: 50px;
+    margin-bottom: 12px;
+  }
+
+  .heroContent p {
+    font-size: 18x;
+    letter-spacing: 0.45px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+
+  .heroContent button {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+  }
+
+  .bestSellers {
+    padding-top: 70px;
+  }
+
+  .bestSellers h2 {
+    line-height: 38px;
+    margin: 0 0 16px 0;
+  }
+
+  .bestSellers .productSlider {
+    margin-top: 70px;
+  }
+
+  .bestSellers .productSlider .product .productInfo .categories {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+  }
+  .bestSellers .productSlider .product .productInfo .price {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+  }
+
+  .bestSellers .productSlider .product .productInfo .price .originalPrice {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    display: block;
+    line-height: 16px;
+  }
+
+  .bestSellers .productSlider .product .productInfo button {
+    height: 40px;
+    width: 180px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+  }
+
+  .newsletter {
+    width: 881px;
+    max-width: 100%;
+    padding: 50px 0;
+    margin: 70px auto;
+  }
+
+  .newsletter h3 {
+    font-size: 22px;
+    letter-spacing: 0.55px;
+    line-height: 42px;
+  }
+
+  .newsletter p {
+    font-size: 22px;
+    letter-spacing: 0.35px;
+    line-height: 42px;
+    margin-bottom: 15px;
+  }
+
+  .newsletter form input {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+
+  .newsletter form button {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+
+  .bottomNav {
+    padding: 50px 0;
+  }
+
+  .bottomNav .container {
+    max-width: 90%;
+  }
+
+  .bottomNav ul li a {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 22px;
+  }
+
+  .bottomNav ul li .listTitle {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+
+  .copyrightText {
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+/*Design for Tablet*/
+@media screen and (max-width: 960px) {
+  .container {
+    max-width: 92%;
+  }
+  .logo {
+    font-size: 24px;
+  }
+
+  header nav ul li {
+    display: none;
+  }
+
+  header nav ul li.menuIcon {
+    display: inline-block;
+  }
+  .heroContent h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 46px;
+  }
+
+  .heroContent p {
+    font-size: 16x;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+  }
+
+  .heroContent button {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    width: 196px;
+  }
+
+  .bestSellers {
+    padding-top: 50px;
+  }
+
+  .bestSellers h2 {
+    font-size: 12px;
+    letter-spacing: 0.7px;
+    line-height: 38px;
+    margin: 0 0 12px 0;
+  }
+
+  .bestSellers .productSlider {
+    margin-top: 48px;
+  }
+
+  .bestSellers .productSlider .product .productInfo .categories {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .bestSellers .productSlider .product .productInfo .title {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+
+  .bestSellers .productSlider .product .productInfo .price {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+  }
+  .bestSellers .productSlider .product .productInfo .price .originalPrice {
+    font-size: 9px;
+    letter-spacing: 0.23px;
+    line-height: 30px;
+    display: block;
+    line-height: 14px;
+  }
+
+  .best-sellers .product-slider .product .product-info button {
+    height: 36px;
+    width: 193px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+
+  .best-sellers .product-slider .product.new::before {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.27px;
+    padding: 0px 12px;
+  }
+
+  .newsletter {
+    width: 100%;
+    max-width: 100%;
+    padding: 50px 0;
+    margin: 50px auto;
+  }
+
+  .newsletter h3 {
+    font-size: 22px;
+    letter-spacing: 0.55px;
+    line-height: 42px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 42px;
+  }
+
+  .bottomNav {
+    padding: 50px 0;
+  }
+
+  .bottomNav .container {
+    max-width: 90%;
+  }
+}
+
+/*Design for mobile*/
+@media screen and (max-width: 576px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo .purpleDot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .heroContent {
+    position: static;
+  }
+
+  .heroContent h1 {
+    color: #000;
+    font-size: 32px;
+    letter-spacing: 0.8px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 27px;
+  }
+
+  .heroContent p {
+    display: none;
+  }
+
+  .heroContent button {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    width: 196px;
+    margin: auto;
+  }
+  .best-sellers {
+    padding-top: 64px;
+  }
+
+  .best-sellers h2 {
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 38px;
+    margin: 0 0 14px 0;
+  }
+
+  .best-sellers hr {
+    border-top: 4px solid #67f11d;
+    width: 40px;
+  }
+
+  .best-sellers .product-slider {
+    margin-top: 42px;
+  }
+
+  .best-sellers .product-slider .product .product-info .categories {
+    margin-bottom: 7px;
+  }
+
+  .best-sellers .product-slider .product .product-info .title {
+    font-size: 14px;
+    letter-spacing: 0.54px;
+    line-height: 18px;
+  }
+
+  .best-sellers .product-slider .product .product-info .price {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .best-sellers .product-slider .product .product-info .price .original-price {
+    font-size: 11px;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+  }
+
+  .best-sellers .product-slider .product .product-info button {
+    height: 36px;
+    width: 146px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+  }
+
+  .newsletter {
+    padding: 44px 0;
+    margin: 100px auto;
+  }
+}

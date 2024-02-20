@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Tech Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="logo">
+          <strong>Tech</strong>
+          <span class="purpleDot"></span>
+          <span>Store</span>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li class="menuIcon"><img src="img/imagens projeto 2/menu_icon.png" alt="Menu sanduíche"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 576px)" srcset="img/imagens projeto 2/Hero_Mobile.jpg">
+        <source media="(max-width: 960px)" srcset="img/imagens projeto 2/Hero_Tablet.jpg">
+        <source media="(max-width: 1440px)" srcset="img/imagens projeto 2/Hero_Mobile.jpg">
+        <img src="img/imagens projeto 2/Hero_Large_Desktop.jpg" alt="Hero Image - smart watch">
+      </picture>
+
+      <div class="heroContent">
+        <div class="container">
+          <h1>Explore our new smart watch series</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            pellentesque, nisi id viverra aliquam, libero ipsum vehicula.
+          </p>
+          <button>See all watches</button>
+        </div>
+      </div>
+    </section>
+    <section class="bestSellers">
+      <h2>Best Sellers</h2>
+      <hr />
+      <div class="productSlider">
+        <div class="container">
+          <div class="product new">
+            <div class="productPicture">
+              <img
+                src="img/imagens projeto 2/Watch_case.jpg"
+                alt="Case smart watch"
+              />
+            </div>
+            <div class="productInfo">
+              <h5 class="categories">Smart Watches, Cases, Apple</h5>
+              <h4 class="title">Penom Case for Apple Watch</h4>
+              <h3 class="price">
+                <span>US$ 6.99</span>
+              </h3>
+              <button>Add to bag</button>
+            </div>
+          </div>
+
+          <div class="product new">
+            <div class="productPicture">
+              <img
+                src="img/imagens projeto 2/Headphone.jpg"
+                alt="Black Headphone"
+              />
+            </div>
+            <div class="productInfo">
+              <h5 class="categories">Headphones, Audio, Sound</h5>
+              <h4 class="title">Noise Cancelling Headphone</h4>
+              <h3 class="price">
+                <span>US$ 18.49</span>
+              </h3>
+              <button>Add to bag</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="productPicture">
+              <img src="img/imagens projeto 2/Camera.jpg" alt="Kits cameras" />
+            </div>
+            <div class="productInfo">
+              <h5 class="categories">Cameras, Kits, Photo & Video</h5>
+              <h4 class="title">Canon Digital SLR EOS Rebel T6</h4>
+              <h3 class="price">
+                <span class="price discontedPrice">US$ 396.89</span>
+                <span class="price originalPrice">US$ 429.99</span>
+              </h3>
+              <button>Add to bag</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+        <h3>Newsletter Signup</h3>
+        <p>Subscribe now and don't miss a single deal!</p>
+        <form>
+          <input type="email" name="email" placeholder="Your email...">
+          <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer>
+      <div class="bottomNav">
+        <div class="container">
+          <ul>
+            <li class="listTitle">categories</li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Cameras</a></li>
+            <li><a href="#">Phones</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Computers</a></li>
+          </ul>
+
+          <ul>
+            <li class="listTitle">Social Media</li>
+            <li><a href="https://www.facebook.com/?locale=pt_BR" target="_blank" >Facebook</a></li>
+            <li><a href="https://br.linkedin.com/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/?lang=pt-br" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+          </ul>
+
+          <ul>
+            <li class="listTitle">Customer Service</li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Delivery & Returns</a></li>
+            <li><a href="#">Finance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyrightText">
+        2020 &copy; All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>
